@@ -1,5 +1,5 @@
 import Component from './Component.js';
-import Header from './Header.js;';
+import Header from './Header.js';
 
 class App extends Component {
 
@@ -11,6 +11,8 @@ class App extends Component {
 
         const main = dom.querySelector('main');
         dom.insertBefore(headerDOM, main);
+
+        return dom;
     }
     
     renderTemplate() {
