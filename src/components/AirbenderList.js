@@ -17,7 +17,7 @@ class AirbenderList extends Component {
 
     renderTemplate() {
         return /*html*/`
-            <ul class="sirbender-item">
+            <ul class="airbenders">
               
             </ul>
         `;
