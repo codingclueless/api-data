@@ -40,7 +40,6 @@ header h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    text-align: center;  
 }
 
 .airbenders img {
@@ -58,6 +57,7 @@ header h2 {
     color: rgba(244, 248, 249, 0.824);
     font-size: 5vw;
     max-width: 40vw;
+    text-align: center;
 }
 
 .airbenders li:hover {
@@ -67,6 +67,7 @@ header h2 {
 }
 
 
+/*loading*/
 .loading {
     position: absolute;
     top: 0;
