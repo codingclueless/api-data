@@ -1,5 +1,6 @@
 import Component from './Component.js';
 import Header from './Header.js';
+import AirbenderList from './AirbenderList.js';
 
 class App extends Component {
 
