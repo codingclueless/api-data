@@ -52,7 +52,8 @@ header h2 {
 }
 
 .airbenders h3 {
-    margin-top: -6vw;
+    margin-top: -7vw;
+    margin-left: 2vw;
     text-shadow: 4px 4px 10px rgb(22, 188, 199);
     color: rgba(244, 248, 249, 0.824);
     font-size: 5vw;
