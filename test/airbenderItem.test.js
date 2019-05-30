@@ -21,5 +21,7 @@ test('render template from html', function(assert) {
     <li class="airbender-item">
         <img src="https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=20130627160441">,
         <h3>46th Earth King</h3>
+        <a href="#enemies=46th+Earth+King">Enemies</a>
+        <a href="#allies=46th+Earth+King">Allies</a>
     </li>`);
 });

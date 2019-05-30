@@ -66,6 +66,7 @@ header h2 {
     transform: scale(1.5) rotate(360deg);
     
 }
+/*end list*/
 
 
 /*loading*/
@@ -78,5 +79,23 @@ header h2 {
     text-align: center;
     padding-top: 200px;
     background: rgba(0, 0, 0, 0.2);
+}
+
+/*links*/
+#links {
+    display: flex;
+    justify-content: center;
+    margin-top: -4vw;
+    margin-left: 2vw;
+    max-width: 40vw;
+    text-align: center;
+}
+
+#links a {
+    padding: 1vw;
+    text-decoration-color: none;
+    text-shadow: 4px 4px 10px rgb(22, 188, 199);
+    color: rgba(244, 248, 249, 89);
+    font-size: 5vw;
 }
 
