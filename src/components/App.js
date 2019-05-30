@@ -21,18 +21,37 @@ class App extends Component {
         const loading = new Loading({ loading: true });
         main.appendChild(loading.render());
 
-        airbenderApi.getAirbender()
-            .then(airbender => {
-                airbenderList.update({ airbender });
-            })
-            .catch(err => {
-                console.log(err);
-            })
-            .finally(() => {
-                loading.update({ loading: false });
-            });
-
+        function loadCharacters() {
+            const params = window.location.hash.slice(1);
             
+            const searchParams = new URLSearchParams(params);
+            console.log(searchParams.toString());
+
+            let type = '';
+            if(searchParams.get('allies')) {
+                type = 'allies';
+            } else if(searchParams.get('enemies')) {
+                type = 'enemies';
+            }
+            
+            const search = searchParams.get(type);
+
+            airbenderApi.getAirbender(search, type)
+                .then(airbender => {
+                    airbenderList.update({ airbender });
+                })
+                .finally(() => {
+                    loading.update({ loading: false });
+                });
+            
+        }
+
+        loadCharacters();
+
+        window.addEventListener('hashchange', () => {
+            loadCharacters();  
+        });
+        
         return dom;
     }
     
